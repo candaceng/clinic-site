@@ -1,0 +1,157 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    FAQ
+{% endblock %}
+
+{% block active %}
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+        <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="/services">Services</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="/faq">FAQ            
+                <span class="sr-only">(current)</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact</a>
+        </li>
+    </ul>
+{% endblock %}
+
+{% block main %}
+<h2>Frequently Asked Questions</h2>
+
+<div style="visibility: hidden; position: absolute; width: 0px; height: 0px;">
+  <svg xmlns="http://www.w3.org/2000/svg">
+    <symbol viewBox="0 0 24 24" id="expand-more">
+      <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/><path d="M0 0h24v24H0z" fill="none"/>
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="close">
+      <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/><path d="M0 0h24v24H0z" fill="none"/>
+    </symbol>
+  </svg>
+</div>
+
+<details>
+  <summary>
+    What is Chiropractic?
+    <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+    <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+  </summary>
+  <p>Chiropractic is a form of therapy that addresses the musculoskeletal system through
+    a non-invasive, hands-on, and drug-free approach, focusing on the body as a whole.</p>
+  <!-- <form action="https://www.google.com">
+    <button type="submit" class="faq-btn">test</button>
+  </form> -->
+</details>
+
+<details>
+  <summary>
+    Who are Chiropractors?
+    <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+    <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+  </summary>
+  <p>Chiropractors are trained in identifying the root cause of problems, providing
+    diagnosis, treatment, and rehabilitative exercises to reduce pain, restore function,
+    and prevent further injuries from occurring. We specialize in manual therapy, which
+    include spinal and extremity manipulation, as well as muscle release therapy.</p>
+</details>
+
+<details>
+  <summary>
+    Are Chiropractors Doctors?   
+    <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+    <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+  </summary>
+  <p>Chiropractors are not medical doctors. We are however, licensed practitioners who
+    are designated to use the title “doctor” similar to physicians after completing the
+    extensive Doctor of Chiropractic degree program. Through completing a minimum
+    of 4,200 hours of extensive training, we are experts in the assessment, diagnosis,
+    treatment, and prevention of conditions related to the musculoskeletal system.</p>
+</details>
+
+<details>
+    <summary>
+        What is an Adjustment? Are They Safe?
+      <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+      <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+    </summary>
+    <p>An adjustment (or manipulation) is a controlled movement that is high in velocity,
+        but low in amplitude, and is applied to a specific joint in the body. The goal of an
+        adjustment is to restore movement in the joint, ultimately decreasing pain,
+        increasing mobility, and restoring function. The “popping” sound you might hear is
+        caused by gas bubbles releasing from the joint capsule. <br></br>A chiropractic adjustment is a safe and non-invasive approach to restoring function
+        in a joint and is pain-free. In fact, patients report immediate pain relief. However, a
+        small percentage of patients may feel temporary soreness following the adjustment
+        that should resolve quickly.</p>
+  </details>
+
+  <details>
+    <summary>
+      Is Chiropractic Safe for Pregnant and Postpartum Women?  
+      <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+      <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+    </summary>
+    <p>Yes! Chiropractors can provide conservative care to decrease pain and improve
+        function during pregnancy and after birth that is safe, effective, and drug-free.
+        Treatment will include gentle adjustments/mobilizations, with a focus on
+        strengthening of the core musculature.<br></br>
+        <a href="#">Click here</a> to find out more about the GrowCo postpartum rehab for new mama’s!</p>
+  </details>
+
+  <details>
+    <summary>
+        Do I Need a Referral From My Family Doctor?  
+      <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+      <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+    </summary>
+    <p>No! In Canada, chiropractors are primary contact providers, meaning you can access
+        them directly.</p>
+  </details>
+
+  <details>
+    <summary>
+        Do Extended Health Benefits Cover Chiropractic?   
+      <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+      <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+    </summary>
+    <p>Most insurance plans cover chiropractic services. However, not all plans are
+        identical, so it is advised that you contact your insurance provider directly to
+        confirm the details of your coverage.</p>
+  </details>
+
+  <details>
+    <summary>
+        What Common Conditions Do Chiropractors Treat?  
+      <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+      <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+    </summary>
+      <ul>
+        <li>Headaches/Migranes</li>
+        <li>Vertigo/Dizziness</li>
+        <li>Neck Pain</li>
+        <li>Low Back Pain</li>
+        <li>Whiplash</li>
+        <li>Disc Herniations</li>
+        <li>Postural Strain</li>
+        <li>Shoulder Strain</li>
+        <li>Golfer's Elbow</li>
+        <li>Tennis Elbow</li>
+        <li>Carpal Tunnel Syndrome</li>
+        <li>Runner's Knee</li>
+        <li>Achilles Tendonitis</li>
+        <li>Plantar Faciitis</li>
+        <li>Osteoarthritis</li>
+        <li>TMJ Dysfunction</li>
+        <br>+more!
+      </ul>
+  </details>
+{% endblock %}

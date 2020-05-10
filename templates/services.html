@@ -1,0 +1,166 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Services
+{% endblock %}
+
+{% block active %}
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+        <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item active">
+        <a class="nav-link" href="/services">Services            
+            <span class="sr-only">(current)</span>
+        </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/faq">FAQ</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact</a>
+        </li>
+    </ul>
+{% endblock %}
+
+{% block main %}
+    <h2>Services</h2>
+
+    <div style="visibility: hidden; position: absolute; width: 0px; height: 0px;">
+    <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol viewBox="0 0 24 24" id="expand-more">
+        <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/><path d="M0 0h24v24H0z" fill="none"/>
+        </symbol>
+        <symbol viewBox="0 0 24 24" id="close">
+        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/><path d="M0 0h24v24H0z" fill="none"/>
+        </symbol>
+    </svg>
+    </div>
+
+    <details>
+        <summary class="test">
+            CHIROPRACTIC
+            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+        </summary>
+        <!-- <img src="/static/bffc.png" width="100%" alt=""> -->
+        <p>
+            The first visit will typically be 45-60 minutes in length, and is aimed towards
+            understanding the condition you are presenting with, while building a therapeutic
+            relationship. The first visit will typically include a comprehensive health history and
+            a thorough physical examination. Assessment findings, as well as an individualized
+            treatment plan will be discussed with you, allowing you to be more involved in your
+            care. Treatment is often provided on the first visit.
+            <br></br>Treatment options are tailored to your individual needs, and can include:
+            <ul>
+                <li>Manipulation (spinal and extremity)</li>
+                <li>Mobilizations</li>
+                <li>Soft tissue therapy</li>
+                <li>Accupuncture</li>
+                <li>Ongoing education</li>
+            </ul>
+        </p>
+        <p>
+            Patients will also be given individualized rehabilitative or “pre-habilitative”
+            exercises, to either facilitate recovery or prevent injuries from arising.
+            <br></br>Subsequent visits will be shorter in length, and can last anywhere between 20-40
+            minutes, depending on the severity of your condition.
+        </p>
+        <form action="https://www.google.com">
+            <button type="submit" class="summary-btn">Book Now</button>
+        </form>
+    </details>
+
+    <details>
+        <summary>
+            ACCUPUNCTURE
+            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+        </summary>
+        <p>
+            As an adjunct modality to chiropractic care, Contemporary Medical Acupuncture
+            involves inserting a thin, sterile needle into the body to modulate the nervous
+            system. It involves stimulating muscles, nerves, and blood vessels, with or without
+            electricity, to induce physiological changes for therapeutic benefit.
+            <br></br>How accupuncture can help you!
+            <ul>
+                <li>Decreases pain</li>
+                <li>Increases blood flow</li>
+                <li>Relaxes muscles</li>
+                <li>Promotes tissue healing</li>
+                <li>Increases strength</li>
+            </ul>
+        </p>
+        <form action="https://www.google.com">
+            <button type="submit" class="summary-btn">Book Now</button>
+        </form>
+    </details>
+
+    <details>
+        <summary>
+            PERINATAL CARE
+            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+        </summary>
+        <p>
+            During the entire length of your pregnancy, your body goes through tremendous
+            amounts of changes as it is preparing for the arrival of your baby. You may notice
+            aches and pains start to arise in various parts of your body.
+            <br></br>Chiropractic care at this time can help alleviate those discomforts, putting you at
+            ease through the course of your pregnancy. Studies have shown that it can also
+            decrease the incidence of postpartum-related back pain as well.
+            <br></br>The examination process will be similar to that of a regular chiropractic
+            examination, but the treatment plan will be modified to adapt to your needs.
+            <br></br>Treatment options include:
+            <ul>
+                <li>Gentle mobilizations/manipulation</li>
+                <li>Soft tissue work to alleviate round ligament and broad ligament pain, and other tight musculature</li>
+                <li>Strengthening exercises</li>
+                <li>Specialized taping techniques to decrease pain and improve lymph drainage</li>
+                <li>Ongoing education</li>
+            </ul>
+        </p>
+        <form action="https://www.google.com">
+            <button type="submit" class="summary-btn">Book Now</button>
+        </form>
+    </details>
+
+    <details>
+        <summary>
+            POSTPARTUM CARE
+            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+        </summary>
+        <p>
+            Postpartum care goes beyond the 6-week check up with your OB and midwife.
+            Your body goes through tremendous change throughout pregnancy, and it
+            doesn’t just “bounce back”.
+            <br></br>Our goal is to provide you with the recovery you need to reduce the risk of
+            common postpartum complications such as low back pain, core dysfunction,
+            incontinence, and pelvic pain, while giving you the ongoing emotional support
+            you need throughout your healing.
+            <br></br>The examination process will be similar to that of a regular chiropractic
+            examination, with an emphasis on the core musculature and the diastasis recti. The
+            treatment plan will be modified to adapt to your needs.
+            <br></br>Treatment may include a combination of:
+            <ul>
+                <li>Strengthening exercises of core musculature</li>
+                <li>Gentle mobilizations/manipulation</li>
+                <li>Soft tissue therapy to tight musculature</li>
+                <li>Ongoing education</li>
+            </ul>
+        </p>
+        <p>
+            GrowCo group rehabilitative classes are offered every few months. Feel free to
+bring your babe to this mommy + me class! Click here to learn more!
+        </p>
+        <form action="https://www.google.com">
+            <button type="submit" class="summary-btn">Book Now</button>
+        </form>
+    </details>
+
+    
+{% endblock %}
